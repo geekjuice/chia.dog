@@ -10,8 +10,7 @@ source $ENV
 
 # Setup variables
 URI="http://chia.dog/api/chia"
-BODY="isHere=yes"
 QUERY="token==$API_TOKEN"
 
 # Make request
-http POST "$URI" "$BODY" "$QUERY"
+http "$URI" "$QUERY"

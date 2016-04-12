@@ -14,4 +14,4 @@ BODY="isHere=no"
 QUERY="token==$API_TOKEN"
 
 # Make request
-http "$URI" "$BODY" "$QUERY"
+http POST "$URI" "$BODY" "$QUERY"
