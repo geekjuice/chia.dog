@@ -39,7 +39,9 @@
     "watch": "nodemon --watch lib --exec npm run server",
     "start": "DEBUG=chia-dog:* npm run watch",
     "debug": "DEBUG=chia-dog:* iron-node lib/debug.js",
-    "deploy": "./bin/deploy"
+    "deploy": "./bin/deploy",
+    "yes": "./bin/yes",
+    "no": "./bin/no"
   },
   "dependencies": {
     "cron": "^1.1.0",

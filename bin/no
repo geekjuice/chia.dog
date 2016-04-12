@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# Go to project git root
+PROJECT_ROOT=$(git rev-parse --show-toplevel)
+cd $PROJECT_ROOT
+
+# Load ENV
+ENV="./.env"
+source $ENV
+
+# Setup variables
+URI="http://chia.dog/api/chia"
+BODY="isHere=no"
+QUERY="token==$API_TOKEN"
+
+# Make request
+http "$URI" "$BODY" "$QUERY"
