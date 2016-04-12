@@ -1,6 +1,12 @@
-# [Chia.Dog](http://chia.dog)
+[chia.dog](http://chia.dog)
+===========================
 
 Is Chia here?
+-------------
 
-# License
+![Chia](assets/chia.jpg)
+
+
+License
+=======
 MIT &copy; Nick Hwang
