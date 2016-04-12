@@ -32,8 +32,8 @@
     "test": "ava --verbose",
     "test:watch": "ava --verbose --watch",
     "clean": "del dist",
+    "build": "babel --copy-files lib --out-dir dist",
     "clean+build": "npm run clean && npm run build",
-    "build": "babel lib -d dist",
     "tunnel": "lt --subdomain chia-dog --port 3000",
     "server": "babel-node lib/main.js",
     "watch": "nodemon --watch lib --exec npm run server",
@@ -41,15 +41,19 @@
     "debug": "DEBUG=chia-dog:* iron-node lib/debug.js"
   },
   "dependencies": {
+    "cron": "^1.1.0",
     "debug": "^2.2.0",
-    "promise": "^7.1.1",
-    "rxjs": "^5.0.0-beta.5",
     "dotenv": "^2.0.0",
     "forever": "^0.15.1",
     "koa": "^2.0.0",
     "koa-bodyparser": "^3.0.0",
     "koa-morgan": "^1.0.1",
-    "koa-router": "^7.0.1"
+    "koa-router": "^7.0.1",
+    "promise": "^7.1.1",
+    "radium": "^0.17.1",
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1",
+    "rxjs": "^5.0.0-beta.5"
   },
   "devDependencies": {
     "ava": "^0.14.0",
@@ -62,6 +66,7 @@
     "babel-plugin-transform-runtime": "^6.7.5",
     "babel-plugin-transform-strict-mode": "^6.6.5",
     "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
     "babel-register": "^6.7.2",
     "chalk": "^1.1.3",
     "del-cli": "^0.2.0",
