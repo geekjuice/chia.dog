@@ -38,7 +38,8 @@
     "server": "babel-node lib/main.js",
     "watch": "nodemon --watch lib --exec npm run server",
     "start": "DEBUG=chia-dog:* npm run watch",
-    "debug": "DEBUG=chia-dog:* iron-node lib/debug.js"
+    "debug": "DEBUG=chia-dog:* iron-node lib/debug.js",
+    "deploy": "./bin/deploy"
   },
   "dependencies": {
     "cron": "^1.1.0",

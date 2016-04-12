@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+git checkout -b deployed
+
+npm run clean+build
+
+git add -f dist
+
+git commit -m 'Ship it!'
+
+git push -f heroku deployed:master
+
+git checkout master
+
+git branch -D deployed
