@@ -1,0 +1,6 @@
+{
+  "extends": "geekjuice/esnext",
+  "rules": {
+    "no-param-reassign": "off"
+  }
+}
