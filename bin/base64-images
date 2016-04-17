@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+/* eslint-disable */
+
+const fs = require('fs');
+const path = require('path');
+
+const images = process.argv.slice(2);
+
+if (!images.length) {
+  console.log('No images specified...');
+  process.exit(1);
+}
+
+images.forEach(image => {
+  const filepath = path.join(__dirname, '../images', image);
+  fs.readFile(filepath, (err, data) => {
+    if (err) throw err;
+    console.log(data.toString('base64'));
+  });
+});

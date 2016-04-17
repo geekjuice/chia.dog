@@ -1,10 +1,8 @@
 [chia.dog](http://chia.dog)
 ===========================
 
-Is Chia here?
--------------
 
-![Chia](assets/chia.jpg)
+<img src="images/chia.png" width=300 />
 
 
 License
