@@ -40,6 +40,7 @@
     "start": "DEBUG=chia-dog:* npm run watch",
     "debug": "DEBUG=chia-dog:* iron-node lib/debug.js",
     "deploy": "./bin/deploy",
+    "dunno": "./bin/dunno",
     "yes": "./bin/yes",
     "no": "./bin/no"
   },
